@@ -1,0 +1,76 @@
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.box1 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(52, 43, 129);
+  transition: width 1s ease-in-out;
+  margin-right: 5rem;
+}
+
+.box1:hover {
+  width: 200px;
+}
+/* 
+.box2:hover .box2 {
+  animation: animate 1s ease-in-out;
+} */
+
+@keyframes exmppl {
+  0% {
+    background-color: rgb(55, 143, 143);
+    /* position: absolute; */
+    transform: scale(0.3);
+
+    /* top: 100px;
+    left: 50px; */
+  }
+
+  50% {
+    background-color: rgb(77, 42, 158);
+    /* position: absolute; */
+    transform: scale(1.5);
+    border-radius: 50%;
+    /* 
+    top: 200px;
+    left: 250px; */
+  }
+}
+
+.box2 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(151, 4, 151);
+  animation: exmppl 1s 1s ease-in-out;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  /* transition: width 1s ease-in-out; */
+}
+
+.btn {
+  margin-left: 2rem;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(32, 93, 185);
+  text-align: center;
+  line-height: 50px;
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+
+.btn:hover::after {
+  content: " >>";
+}
+.btn:hover {
+  opacity: 8;
+}
